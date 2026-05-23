@@ -1,0 +1,847 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7": {
+      "AutoCAD.NET/23.1.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Core": "[23.1.0, 24.0.0)"
+        },
+        "compile": {
+          "lib/net47/AcCui.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcDx.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMr.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcSeamless.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcTcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcWindows.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUIMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUiPalettes.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdWindows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Core/23.1.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Model": "[23.1.0, 24.0.0)"
+        },
+        "compile": {
+          "lib/net47/AcCoreMgd.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Model/23.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net47/AcDbMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/acdbmgdbrep.dll": {}
+        },
+        "runtime": {
+          "lib/net47/_._": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ClosedXML/0.95.0": {
+        "type": "package",
+        "dependencies": {
+          "DocumentFormat.OpenXml": "2.7.2",
+          "ExcelNumberFormat": "1.0.10",
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net46/ClosedXML.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/ClosedXML.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "DocumentFormat.OpenXml/2.7.2": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Packaging": "4.0.0"
+        },
+        "compile": {
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net46/DocumentFormat.OpenXml.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "ExcelNumberFormat/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/ExcelNumberFormat.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETFramework.ReferenceAssemblies.net47": "1.0.3"
+        }
+      },
+      "Microsoft.NETFramework.ReferenceAssemblies.net47/1.0.3": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NETFramework.ReferenceAssemblies.net47.targets": {}
+        }
+      },
+      "System.IO.FileSystem.Primitives/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.IO.FileSystem.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.IO.FileSystem.Primitives.dll": {}
+        }
+      },
+      "System.IO.Packaging/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.FileSystem.Primitives": "4.0.1"
+        },
+        "frameworkAssemblies": [
+          "WindowsBase",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.IO.Packaging.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.IO.Packaging.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoCAD.NET/23.1.0": {
+      "sha512": "ILFuLJbyHFeJBsaZ9cOyANeIxcwg5xXITdGClyRhISnHBo9k6+mRzd5uhpbApNvaYdAzjDOQnJ6Q3no9R6jC8g==",
+      "type": "package",
+      "path": "autocad.net/23.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.23.1.0.nupkg.sha512",
+        "autocad.net.nuspec",
+        "lib/net47/AcCui.dll",
+        "lib/net47/AcCui.xml",
+        "lib/net47/AcDx.dll",
+        "lib/net47/AcDx.xml",
+        "lib/net47/AcMgd.dll",
+        "lib/net47/AcMgd.xml",
+        "lib/net47/AcMr.dll",
+        "lib/net47/AcMr.xml",
+        "lib/net47/AcSeamless.dll",
+        "lib/net47/AcSeamless.xml",
+        "lib/net47/AcTcMgd.dll",
+        "lib/net47/AcTcMgd.xml",
+        "lib/net47/AcWindows.dll",
+        "lib/net47/AcWindows.xml",
+        "lib/net47/AdUIMgd.dll",
+        "lib/net47/AdUIMgd.xml",
+        "lib/net47/AdUiPalettes.dll",
+        "lib/net47/AdUiPalettes.xml",
+        "lib/net47/AdWindows.dll",
+        "lib/net47/AdWindows.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Core/23.1.0": {
+      "sha512": "N29BJDcAVAjQ3ybd82Jr4dUXEWZ7XbCnyf0/Bqx5FI8s3s0wL1eP0F1fDboYeXibwrnR1LkeqpGq+SbZAtxZ3Q==",
+      "type": "package",
+      "path": "autocad.net.core/23.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.core.23.1.0.nupkg.sha512",
+        "autocad.net.core.nuspec",
+        "lib/net47/AcCoreMgd.dll",
+        "lib/net47/AcCoreMgd.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Model/23.1.0": {
+      "sha512": "JUfiIpNUPgMmBWVnNFWdbNCrucmWFZGejokoCQTbeygLSP4wHWQjNnpL1WWBSV/B0gSJFh5XyOEzZcmb4QuS1w==",
+      "type": "package",
+      "path": "autocad.net.model/23.1.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.model.23.1.0.nupkg.sha512",
+        "autocad.net.model.nuspec",
+        "lib/net47/AcDbMgd.dll",
+        "lib/net47/AcDbMgd.xml",
+        "lib/net47/AcDbMgdBrep.xml",
+        "lib/net47/acdbmgdbrep.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "ClosedXML/0.95.0": {
+      "sha512": "VH/tHwVg6ZFnx+5RJLkgKsb1XRGSlPIp5wf7Ed3FQsnf1Og9WMuMeOC60Y2yrjXxWWTaXo2O7MbsYM9kXZCZjg==",
+      "type": "package",
+      "path": "closedxml/0.95.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "closedxml.0.95.0.nupkg.sha512",
+        "closedxml.nuspec",
+        "lib/net40/ClosedXML.dll",
+        "lib/net40/ClosedXML.pdb",
+        "lib/net40/ClosedXML.xml",
+        "lib/net46/ClosedXML.dll",
+        "lib/net46/ClosedXML.pdb",
+        "lib/net46/ClosedXML.xml",
+        "lib/netstandard2.0/ClosedXML.dll",
+        "lib/netstandard2.0/ClosedXML.pdb",
+        "lib/netstandard2.0/ClosedXML.xml"
+      ]
+    },
+    "DocumentFormat.OpenXml/2.7.2": {
+      "sha512": "tWT7iu0ab9PNoMTWjv24rt+qnyqvcnPOYs167vPnk4aegAYSAxoUjwNW+VxY8xoLtJntQ/JlWTi7Vt+8TghLlQ==",
+      "type": "package",
+      "path": "documentformat.openxml/2.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "documentformat.openxml.2.7.2.nupkg.sha512",
+        "documentformat.openxml.nuspec",
+        "lib/net35/DocumentFormat.OpenXml.dll",
+        "lib/net35/DocumentFormat.OpenXml.xml",
+        "lib/net40/DocumentFormat.OpenXml.dll",
+        "lib/net40/DocumentFormat.OpenXml.xml",
+        "lib/net46/DocumentFormat.OpenXml.dll",
+        "lib/net46/DocumentFormat.OpenXml.xml",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.dll",
+        "lib/netstandard1.3/DocumentFormat.OpenXml.xml"
+      ]
+    },
+    "ExcelNumberFormat/1.0.10": {
+      "sha512": "dRx817M5t0sv4GCJyAXU8qmhFXcqRpCHzLpxNmkMWTvzlfE0/KM7BNk6qEble0ffAr4xT7RyU7s/HpovVlA/9g==",
+      "type": "package",
+      "path": "excelnumberformat/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "excelnumberformat.1.0.10.nupkg.sha512",
+        "excelnumberformat.nuspec",
+        "lib/net20/ExcelNumberFormat.dll",
+        "lib/net20/ExcelNumberFormat.xml",
+        "lib/netstandard1.0/ExcelNumberFormat.dll",
+        "lib/netstandard1.0/ExcelNumberFormat.xml",
+        "lib/netstandard2.0/ExcelNumberFormat.dll",
+        "lib/netstandard2.0/ExcelNumberFormat.xml"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies/1.0.3": {
+      "sha512": "vUc9Npcs14QsyOD01tnv/m8sQUnGTGOw1BCmKcv77LBJY7OxhJ+zJF7UD/sCL3lYNFuqmQEVlkfS4Quif6FyYg==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.nuspec"
+      ]
+    },
+    "Microsoft.NETFramework.ReferenceAssemblies.net47/1.0.3": {
+      "sha512": "s2ik8oLVJHVcQPVNHq+X5UfpQP6RsvoixtWzuW2qZvYjRickfC70OXpCmEUgTxjWumS4qZfZ3ZGR1yH7ATc4Wg==",
+      "type": "package",
+      "path": "microsoft.netframework.referenceassemblies.net47/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/.NETFramework/v4.7/Accessibility.dll",
+        "build/.NETFramework/v4.7/Accessibility.xml",
+        "build/.NETFramework/v4.7/CustomMarshalers.dll",
+        "build/.NETFramework/v4.7/CustomMarshalers.xml",
+        "build/.NETFramework/v4.7/Facades/System.Collections.Concurrent.dll",
+        "build/.NETFramework/v4.7/Facades/System.Collections.dll",
+        "build/.NETFramework/v4.7/Facades/System.ComponentModel.Annotations.dll",
+        "build/.NETFramework/v4.7/Facades/System.ComponentModel.EventBasedAsync.dll",
+        "build/.NETFramework/v4.7/Facades/System.ComponentModel.dll",
+        "build/.NETFramework/v4.7/Facades/System.Diagnostics.Contracts.dll",
+        "build/.NETFramework/v4.7/Facades/System.Diagnostics.Debug.dll",
+        "build/.NETFramework/v4.7/Facades/System.Diagnostics.Tools.dll",
+        "build/.NETFramework/v4.7/Facades/System.Diagnostics.Tracing.dll",
+        "build/.NETFramework/v4.7/Facades/System.Dynamic.Runtime.dll",
+        "build/.NETFramework/v4.7/Facades/System.Globalization.dll",
+        "build/.NETFramework/v4.7/Facades/System.IO.dll",
+        "build/.NETFramework/v4.7/Facades/System.Linq.Expressions.dll",
+        "build/.NETFramework/v4.7/Facades/System.Linq.Parallel.dll",
+        "build/.NETFramework/v4.7/Facades/System.Linq.Queryable.dll",
+        "build/.NETFramework/v4.7/Facades/System.Linq.dll",
+        "build/.NETFramework/v4.7/Facades/System.Net.NetworkInformation.dll",
+        "build/.NETFramework/v4.7/Facades/System.Net.Primitives.dll",
+        "build/.NETFramework/v4.7/Facades/System.Net.Requests.dll",
+        "build/.NETFramework/v4.7/Facades/System.Net.WebHeaderCollection.dll",
+        "build/.NETFramework/v4.7/Facades/System.ObjectModel.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.Emit.ILGeneration.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.Emit.Lightweight.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.Emit.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.Extensions.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.Primitives.dll",
+        "build/.NETFramework/v4.7/Facades/System.Reflection.dll",
+        "build/.NETFramework/v4.7/Facades/System.Resources.ResourceManager.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Extensions.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Handles.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.InteropServices.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Numerics.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Serialization.Json.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Serialization.Primitives.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.Serialization.Xml.dll",
+        "build/.NETFramework/v4.7/Facades/System.Runtime.dll",
+        "build/.NETFramework/v4.7/Facades/System.Security.Principal.dll",
+        "build/.NETFramework/v4.7/Facades/System.ServiceModel.Duplex.dll",
+        "build/.NETFramework/v4.7/Facades/System.ServiceModel.Http.dll",
+        "build/.NETFramework/v4.7/Facades/System.ServiceModel.NetTcp.dll",
+        "build/.NETFramework/v4.7/Facades/System.ServiceModel.Primitives.dll",
+        "build/.NETFramework/v4.7/Facades/System.ServiceModel.Security.dll",
+        "build/.NETFramework/v4.7/Facades/System.Text.Encoding.Extensions.dll",
+        "build/.NETFramework/v4.7/Facades/System.Text.Encoding.dll",
+        "build/.NETFramework/v4.7/Facades/System.Text.RegularExpressions.dll",
+        "build/.NETFramework/v4.7/Facades/System.Threading.Tasks.Parallel.dll",
+        "build/.NETFramework/v4.7/Facades/System.Threading.Tasks.dll",
+        "build/.NETFramework/v4.7/Facades/System.Threading.Timer.dll",
+        "build/.NETFramework/v4.7/Facades/System.Threading.dll",
+        "build/.NETFramework/v4.7/Facades/System.Xml.ReaderWriter.dll",
+        "build/.NETFramework/v4.7/Facades/System.Xml.XDocument.dll",
+        "build/.NETFramework/v4.7/Facades/System.Xml.XmlSerializer.dll",
+        "build/.NETFramework/v4.7/ISymWrapper.dll",
+        "build/.NETFramework/v4.7/ISymWrapper.xml",
+        "build/.NETFramework/v4.7/Microsoft.Activities.Build.dll",
+        "build/.NETFramework/v4.7/Microsoft.Activities.Build.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.Conversion.v4.0.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.Conversion.v4.0.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.Engine.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.Engine.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.Framework.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.Framework.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.Tasks.v4.0.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.Tasks.v4.0.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.Utilities.v4.0.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.Utilities.v4.0.xml",
+        "build/.NETFramework/v4.7/Microsoft.Build.dll",
+        "build/.NETFramework/v4.7/Microsoft.Build.xml",
+        "build/.NETFramework/v4.7/Microsoft.CSharp.dll",
+        "build/.NETFramework/v4.7/Microsoft.CSharp.xml",
+        "build/.NETFramework/v4.7/Microsoft.JScript.dll",
+        "build/.NETFramework/v4.7/Microsoft.JScript.xml",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.Compatibility.Data.dll",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.Compatibility.Data.xml",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.Compatibility.dll",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.Compatibility.xml",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.dll",
+        "build/.NETFramework/v4.7/Microsoft.VisualBasic.xml",
+        "build/.NETFramework/v4.7/Microsoft.VisualC.STLCLR.dll",
+        "build/.NETFramework/v4.7/Microsoft.VisualC.STLCLR.xml",
+        "build/.NETFramework/v4.7/Microsoft.VisualC.dll",
+        "build/.NETFramework/v4.7/Microsoft.VisualC.xml",
+        "build/.NETFramework/v4.7/PermissionSets/FullTrust.xml",
+        "build/.NETFramework/v4.7/PermissionSets/Internet.xml",
+        "build/.NETFramework/v4.7/PermissionSets/LocalIntranet.xml",
+        "build/.NETFramework/v4.7/PresentationBuildTasks.dll",
+        "build/.NETFramework/v4.7/PresentationBuildTasks.xml",
+        "build/.NETFramework/v4.7/PresentationCore.dll",
+        "build/.NETFramework/v4.7/PresentationCore.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.Aero.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.Aero.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.Aero2.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.Aero2.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.AeroLite.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.AeroLite.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.Classic.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.Classic.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.Luna.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.Luna.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.Royale.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.Royale.xml",
+        "build/.NETFramework/v4.7/PresentationFramework.dll",
+        "build/.NETFramework/v4.7/PresentationFramework.xml",
+        "build/.NETFramework/v4.7/ReachFramework.dll",
+        "build/.NETFramework/v4.7/ReachFramework.xml",
+        "build/.NETFramework/v4.7/RedistList/FrameworkList.xml",
+        "build/.NETFramework/v4.7/System.Activities.Core.Presentation.dll",
+        "build/.NETFramework/v4.7/System.Activities.Core.Presentation.xml",
+        "build/.NETFramework/v4.7/System.Activities.DurableInstancing.dll",
+        "build/.NETFramework/v4.7/System.Activities.DurableInstancing.xml",
+        "build/.NETFramework/v4.7/System.Activities.Presentation.dll",
+        "build/.NETFramework/v4.7/System.Activities.Presentation.xml",
+        "build/.NETFramework/v4.7/System.Activities.dll",
+        "build/.NETFramework/v4.7/System.Activities.xml",
+        "build/.NETFramework/v4.7/System.AddIn.Contract.dll",
+        "build/.NETFramework/v4.7/System.AddIn.Contract.xml",
+        "build/.NETFramework/v4.7/System.AddIn.dll",
+        "build/.NETFramework/v4.7/System.AddIn.xml",
+        "build/.NETFramework/v4.7/System.ComponentModel.Composition.Registration.dll",
+        "build/.NETFramework/v4.7/System.ComponentModel.Composition.Registration.xml",
+        "build/.NETFramework/v4.7/System.ComponentModel.Composition.dll",
+        "build/.NETFramework/v4.7/System.ComponentModel.Composition.xml",
+        "build/.NETFramework/v4.7/System.ComponentModel.DataAnnotations.dll",
+        "build/.NETFramework/v4.7/System.ComponentModel.DataAnnotations.xml",
+        "build/.NETFramework/v4.7/System.Configuration.Install.dll",
+        "build/.NETFramework/v4.7/System.Configuration.Install.xml",
+        "build/.NETFramework/v4.7/System.Configuration.dll",
+        "build/.NETFramework/v4.7/System.Configuration.xml",
+        "build/.NETFramework/v4.7/System.Core.dll",
+        "build/.NETFramework/v4.7/System.Core.xml",
+        "build/.NETFramework/v4.7/System.Data.DataSetExtensions.dll",
+        "build/.NETFramework/v4.7/System.Data.DataSetExtensions.xml",
+        "build/.NETFramework/v4.7/System.Data.Entity.Design.dll",
+        "build/.NETFramework/v4.7/System.Data.Entity.Design.xml",
+        "build/.NETFramework/v4.7/System.Data.Entity.dll",
+        "build/.NETFramework/v4.7/System.Data.Entity.xml",
+        "build/.NETFramework/v4.7/System.Data.Linq.dll",
+        "build/.NETFramework/v4.7/System.Data.Linq.xml",
+        "build/.NETFramework/v4.7/System.Data.OracleClient.dll",
+        "build/.NETFramework/v4.7/System.Data.OracleClient.xml",
+        "build/.NETFramework/v4.7/System.Data.Services.Client.dll",
+        "build/.NETFramework/v4.7/System.Data.Services.Client.xml",
+        "build/.NETFramework/v4.7/System.Data.Services.Design.dll",
+        "build/.NETFramework/v4.7/System.Data.Services.Design.xml",
+        "build/.NETFramework/v4.7/System.Data.Services.dll",
+        "build/.NETFramework/v4.7/System.Data.Services.xml",
+        "build/.NETFramework/v4.7/System.Data.SqlXml.dll",
+        "build/.NETFramework/v4.7/System.Data.SqlXml.xml",
+        "build/.NETFramework/v4.7/System.Data.dll",
+        "build/.NETFramework/v4.7/System.Data.xml",
+        "build/.NETFramework/v4.7/System.Deployment.dll",
+        "build/.NETFramework/v4.7/System.Deployment.xml",
+        "build/.NETFramework/v4.7/System.Design.dll",
+        "build/.NETFramework/v4.7/System.Design.xml",
+        "build/.NETFramework/v4.7/System.Device.dll",
+        "build/.NETFramework/v4.7/System.Device.xml",
+        "build/.NETFramework/v4.7/System.DirectoryServices.AccountManagement.dll",
+        "build/.NETFramework/v4.7/System.DirectoryServices.AccountManagement.xml",
+        "build/.NETFramework/v4.7/System.DirectoryServices.Protocols.dll",
+        "build/.NETFramework/v4.7/System.DirectoryServices.Protocols.xml",
+        "build/.NETFramework/v4.7/System.DirectoryServices.dll",
+        "build/.NETFramework/v4.7/System.DirectoryServices.xml",
+        "build/.NETFramework/v4.7/System.Drawing.Design.dll",
+        "build/.NETFramework/v4.7/System.Drawing.Design.xml",
+        "build/.NETFramework/v4.7/System.Drawing.dll",
+        "build/.NETFramework/v4.7/System.Drawing.xml",
+        "build/.NETFramework/v4.7/System.Dynamic.dll",
+        "build/.NETFramework/v4.7/System.EnterpriseServices.Thunk.dll",
+        "build/.NETFramework/v4.7/System.EnterpriseServices.Wrapper.dll",
+        "build/.NETFramework/v4.7/System.EnterpriseServices.dll",
+        "build/.NETFramework/v4.7/System.EnterpriseServices.xml",
+        "build/.NETFramework/v4.7/System.IO.Compression.FileSystem.dll",
+        "build/.NETFramework/v4.7/System.IO.Compression.FileSystem.xml",
+        "build/.NETFramework/v4.7/System.IO.Compression.dll",
+        "build/.NETFramework/v4.7/System.IO.Compression.xml",
+        "build/.NETFramework/v4.7/System.IO.Log.dll",
+        "build/.NETFramework/v4.7/System.IO.Log.xml",
+        "build/.NETFramework/v4.7/System.IdentityModel.Selectors.dll",
+        "build/.NETFramework/v4.7/System.IdentityModel.Selectors.xml",
+        "build/.NETFramework/v4.7/System.IdentityModel.Services.dll",
+        "build/.NETFramework/v4.7/System.IdentityModel.Services.xml",
+        "build/.NETFramework/v4.7/System.IdentityModel.dll",
+        "build/.NETFramework/v4.7/System.IdentityModel.xml",
+        "build/.NETFramework/v4.7/System.Linq.xml",
+        "build/.NETFramework/v4.7/System.Management.Instrumentation.dll",
+        "build/.NETFramework/v4.7/System.Management.Instrumentation.xml",
+        "build/.NETFramework/v4.7/System.Management.dll",
+        "build/.NETFramework/v4.7/System.Management.xml",
+        "build/.NETFramework/v4.7/System.Messaging.dll",
+        "build/.NETFramework/v4.7/System.Messaging.xml",
+        "build/.NETFramework/v4.7/System.Net.Http.WebRequest.dll",
+        "build/.NETFramework/v4.7/System.Net.Http.WebRequest.xml",
+        "build/.NETFramework/v4.7/System.Net.Http.dll",
+        "build/.NETFramework/v4.7/System.Net.Http.xml",
+        "build/.NETFramework/v4.7/System.Net.dll",
+        "build/.NETFramework/v4.7/System.Net.xml",
+        "build/.NETFramework/v4.7/System.Numerics.dll",
+        "build/.NETFramework/v4.7/System.Numerics.xml",
+        "build/.NETFramework/v4.7/System.Printing.dll",
+        "build/.NETFramework/v4.7/System.Printing.xml",
+        "build/.NETFramework/v4.7/System.Reflection.Context.dll",
+        "build/.NETFramework/v4.7/System.Reflection.Context.xml",
+        "build/.NETFramework/v4.7/System.Runtime.Caching.dll",
+        "build/.NETFramework/v4.7/System.Runtime.Caching.xml",
+        "build/.NETFramework/v4.7/System.Runtime.DurableInstancing.dll",
+        "build/.NETFramework/v4.7/System.Runtime.DurableInstancing.xml",
+        "build/.NETFramework/v4.7/System.Runtime.Remoting.dll",
+        "build/.NETFramework/v4.7/System.Runtime.Remoting.xml",
+        "build/.NETFramework/v4.7/System.Runtime.Serialization.Formatters.Soap.dll",
+        "build/.NETFramework/v4.7/System.Runtime.Serialization.Formatters.Soap.xml",
+        "build/.NETFramework/v4.7/System.Runtime.Serialization.dll",
+        "build/.NETFramework/v4.7/System.Runtime.Serialization.xml",
+        "build/.NETFramework/v4.7/System.Security.dll",
+        "build/.NETFramework/v4.7/System.Security.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Activation.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Activation.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Activities.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Activities.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Channels.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Channels.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Discovery.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Discovery.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Routing.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Routing.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.Web.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.Web.xml",
+        "build/.NETFramework/v4.7/System.ServiceModel.dll",
+        "build/.NETFramework/v4.7/System.ServiceModel.xml",
+        "build/.NETFramework/v4.7/System.ServiceProcess.dll",
+        "build/.NETFramework/v4.7/System.ServiceProcess.xml",
+        "build/.NETFramework/v4.7/System.Speech.dll",
+        "build/.NETFramework/v4.7/System.Speech.xml",
+        "build/.NETFramework/v4.7/System.Threading.Tasks.Dataflow.xml",
+        "build/.NETFramework/v4.7/System.Transactions.dll",
+        "build/.NETFramework/v4.7/System.Transactions.xml",
+        "build/.NETFramework/v4.7/System.Web.Abstractions.dll",
+        "build/.NETFramework/v4.7/System.Web.ApplicationServices.dll",
+        "build/.NETFramework/v4.7/System.Web.ApplicationServices.xml",
+        "build/.NETFramework/v4.7/System.Web.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7/System.Web.DataVisualization.dll",
+        "build/.NETFramework/v4.7/System.Web.DataVisualization.xml",
+        "build/.NETFramework/v4.7/System.Web.DynamicData.Design.dll",
+        "build/.NETFramework/v4.7/System.Web.DynamicData.Design.xml",
+        "build/.NETFramework/v4.7/System.Web.DynamicData.dll",
+        "build/.NETFramework/v4.7/System.Web.DynamicData.xml",
+        "build/.NETFramework/v4.7/System.Web.Entity.Design.dll",
+        "build/.NETFramework/v4.7/System.Web.Entity.Design.xml",
+        "build/.NETFramework/v4.7/System.Web.Entity.dll",
+        "build/.NETFramework/v4.7/System.Web.Entity.xml",
+        "build/.NETFramework/v4.7/System.Web.Extensions.Design.dll",
+        "build/.NETFramework/v4.7/System.Web.Extensions.Design.xml",
+        "build/.NETFramework/v4.7/System.Web.Extensions.dll",
+        "build/.NETFramework/v4.7/System.Web.Extensions.xml",
+        "build/.NETFramework/v4.7/System.Web.Mobile.dll",
+        "build/.NETFramework/v4.7/System.Web.Mobile.xml",
+        "build/.NETFramework/v4.7/System.Web.RegularExpressions.dll",
+        "build/.NETFramework/v4.7/System.Web.RegularExpressions.xml",
+        "build/.NETFramework/v4.7/System.Web.Routing.dll",
+        "build/.NETFramework/v4.7/System.Web.Services.dll",
+        "build/.NETFramework/v4.7/System.Web.Services.xml",
+        "build/.NETFramework/v4.7/System.Web.dll",
+        "build/.NETFramework/v4.7/System.Web.xml",
+        "build/.NETFramework/v4.7/System.Windows.Controls.Ribbon.dll",
+        "build/.NETFramework/v4.7/System.Windows.Controls.Ribbon.xml",
+        "build/.NETFramework/v4.7/System.Windows.Forms.DataVisualization.Design.dll",
+        "build/.NETFramework/v4.7/System.Windows.Forms.DataVisualization.dll",
+        "build/.NETFramework/v4.7/System.Windows.Forms.DataVisualization.xml",
+        "build/.NETFramework/v4.7/System.Windows.Forms.dll",
+        "build/.NETFramework/v4.7/System.Windows.Forms.xml",
+        "build/.NETFramework/v4.7/System.Windows.Input.Manipulations.dll",
+        "build/.NETFramework/v4.7/System.Windows.Input.Manipulations.xml",
+        "build/.NETFramework/v4.7/System.Windows.Presentation.dll",
+        "build/.NETFramework/v4.7/System.Windows.Presentation.xml",
+        "build/.NETFramework/v4.7/System.Windows.dll",
+        "build/.NETFramework/v4.7/System.Workflow.Activities.dll",
+        "build/.NETFramework/v4.7/System.Workflow.Activities.xml",
+        "build/.NETFramework/v4.7/System.Workflow.ComponentModel.dll",
+        "build/.NETFramework/v4.7/System.Workflow.ComponentModel.xml",
+        "build/.NETFramework/v4.7/System.Workflow.Runtime.dll",
+        "build/.NETFramework/v4.7/System.Workflow.Runtime.xml",
+        "build/.NETFramework/v4.7/System.WorkflowServices.dll",
+        "build/.NETFramework/v4.7/System.WorkflowServices.xml",
+        "build/.NETFramework/v4.7/System.Xaml.dll",
+        "build/.NETFramework/v4.7/System.Xaml.xml",
+        "build/.NETFramework/v4.7/System.Xml.Linq.dll",
+        "build/.NETFramework/v4.7/System.Xml.Linq.xml",
+        "build/.NETFramework/v4.7/System.Xml.Serialization.dll",
+        "build/.NETFramework/v4.7/System.Xml.dll",
+        "build/.NETFramework/v4.7/System.Xml.xml",
+        "build/.NETFramework/v4.7/System.dll",
+        "build/.NETFramework/v4.7/System.xml",
+        "build/.NETFramework/v4.7/UIAutomationClient.dll",
+        "build/.NETFramework/v4.7/UIAutomationClient.xml",
+        "build/.NETFramework/v4.7/UIAutomationClientsideProviders.dll",
+        "build/.NETFramework/v4.7/UIAutomationClientsideProviders.xml",
+        "build/.NETFramework/v4.7/UIAutomationProvider.dll",
+        "build/.NETFramework/v4.7/UIAutomationProvider.xml",
+        "build/.NETFramework/v4.7/UIAutomationTypes.dll",
+        "build/.NETFramework/v4.7/UIAutomationTypes.xml",
+        "build/.NETFramework/v4.7/WindowsBase.dll",
+        "build/.NETFramework/v4.7/WindowsBase.xml",
+        "build/.NETFramework/v4.7/WindowsFormsIntegration.dll",
+        "build/.NETFramework/v4.7/WindowsFormsIntegration.xml",
+        "build/.NETFramework/v4.7/XamlBuildTask.dll",
+        "build/.NETFramework/v4.7/XamlBuildTask.xml",
+        "build/.NETFramework/v4.7/mscorlib.dll",
+        "build/.NETFramework/v4.7/mscorlib.xml",
+        "build/.NETFramework/v4.7/namespaces.xml",
+        "build/.NETFramework/v4.7/sysglobl.dll",
+        "build/.NETFramework/v4.7/sysglobl.xml",
+        "build/Microsoft.NETFramework.ReferenceAssemblies.net47.targets",
+        "microsoft.netframework.referenceassemblies.net47.1.0.3.nupkg.sha512",
+        "microsoft.netframework.referenceassemblies.net47.nuspec"
+      ]
+    },
+    "System.IO.FileSystem.Primitives/4.0.1": {
+      "sha512": "kWkKD203JJKxJeE74p8aF8y4Qc9r9WQx4C0cHzHPrY3fv/L/IhWnyCHaFJ3H1QPOH6A93whlQ2vG5nHlBDvzWQ==",
+      "type": "package",
+      "path": "system.io.filesystem.primitives/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.IO.FileSystem.Primitives.dll",
+        "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.IO.FileSystem.Primitives.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.Primitives.dll",
+        "ref/netstandard1.3/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/de/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/es/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/fr/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/it/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/ja/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/ko/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/ru/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.Primitives.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.Primitives.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.io.filesystem.primitives.4.0.1.nupkg.sha512",
+        "system.io.filesystem.primitives.nuspec"
+      ]
+    },
+    "System.IO.Packaging/4.0.0": {
+      "sha512": "taPqPWcAj/h6e/c+zIWIVe1ddJtpV6acC6g9GpolxUcIwUaH6zc0ZbFS8kkVzBkuWv76pMalKeTzfmHtfT1pXA==",
+      "type": "package",
+      "path": "system.io.packaging/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/net46/System.IO.Packaging.dll",
+        "lib/netstandard1.3/System.IO.Packaging.dll",
+        "ref/net46/System.IO.Packaging.dll",
+        "ref/netstandard1.3/System.IO.Packaging.dll",
+        "system.io.packaging.4.0.0.nupkg.sha512",
+        "system.io.packaging.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7": [
+      "AutoCAD.NET >= 23.1.0",
+      "AutoCAD.NET.Core >= 23.1.0",
+      "ClosedXML >= 0.95.0",
+      "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj",
+      "projectName": "SteelCadPlugin",
+      "projectPath": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj",
+      "packagesPath": "C:\\Users\\DellPrecision7510\\.nuget\\packages\\",
+      "outputPath": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\DellPrecision7510\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net47"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net47": {
+          "targetAlias": "net47",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net47": {
+        "targetAlias": "net47",
+        "dependencies": {
+          "AutoCAD.NET": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[23.1.0, )"
+          },
+          "AutoCAD.NET.Core": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "target": "Package",
+            "version": "[23.1.0, )"
+          },
+          "ClosedXML": {
+            "target": "Package",
+            "version": "[0.95.0, )"
+          },
+          "Microsoft.NETFramework.ReferenceAssemblies": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.0.3, )",
+            "autoReferenced": true
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.421\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

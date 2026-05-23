@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj": {}
+  },
+  "projects": {
+    "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj",
+        "projectName": "SteelCadPlugin",
+        "projectPath": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj",
+        "packagesPath": "C:\\Users\\DellPrecision7510\\.nuget\\packages\\",
+        "outputPath": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\DellPrecision7510\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net47"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net47": {
+            "targetAlias": "net47",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net47": {
+          "targetAlias": "net47",
+          "dependencies": {
+            "AutoCAD.NET": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[23.1.0, )"
+            },
+            "AutoCAD.NET.Core": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[23.1.0, )"
+            },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.421\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

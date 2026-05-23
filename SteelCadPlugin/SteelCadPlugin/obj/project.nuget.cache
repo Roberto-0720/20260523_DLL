@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "0WJ8H2IjP90=",
+  "success": true,
+  "projectFilePath": "f:\\12 Claude-Cowork\\03 Projects\\20260523_LispSteelCad\\SteelCadPlugin\\SteelCadPlugin\\SteelCadPlugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\autocad.net\\23.1.0\\autocad.net.23.1.0.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\autocad.net.core\\23.1.0\\autocad.net.core.23.1.0.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\autocad.net.model\\23.1.0\\autocad.net.model.23.1.0.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\closedxml\\0.95.0\\closedxml.0.95.0.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\documentformat.openxml\\2.7.2\\documentformat.openxml.2.7.2.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net47\\1.0.3\\microsoft.netframework.referenceassemblies.net47.1.0.3.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
+    "C:\\Users\\DellPrecision7510\\.nuget\\packages\\system.io.packaging\\4.0.0\\system.io.packaging.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

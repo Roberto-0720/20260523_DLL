@@ -1,0 +1,238 @@
+<Window x:Class="SteelCadPlugin.UI.SteelPaletteForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SteelCAD"
+        Width="280" Height="560"
+        MinWidth="240" MinHeight="420"
+        WindowStyle="ToolWindow"
+        ResizeMode="CanResizeWithGrip"
+        ShowInTaskbar="False"
+        Topmost="False"
+        Background="#1A1A2E"
+        Foreground="#E0E0E0"
+        FontFamily="Segoe UI">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="AccentBrush"  Color="#4FC3F7"/>
+        <SolidColorBrush x:Key="PanelBrush"   Color="#16213E"/>
+        <SolidColorBrush x:Key="DarkBrush"    Color="#0F3460"/>
+
+        <!-- Section group box -->
+        <Style x:Key="GroupBorder" TargetType="Border">
+            <Setter Property="Background"     Value="#16213E"/>
+            <Setter Property="BorderBrush"    Value="#263238"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius"   Value="6"/>
+            <Setter Property="Margin"         Value="0,0,0,8"/>
+            <Setter Property="Padding"        Value="10,8"/>
+        </Style>
+
+        <!-- Label style -->
+        <Style x:Key="SectionLabel" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="10"/>
+            <Setter Property="Foreground" Value="#78909C"/>
+            <Setter Property="Margin"     Value="0,0,0,3"/>
+        </Style>
+
+        <!-- Value label -->
+        <Style x:Key="ValueText" TargetType="TextBlock">
+            <Setter Property="FontSize"   Value="13"/>
+            <Setter Property="Foreground" Value="#E0E0E0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <!-- View type radio button style -->
+        <Style x:Key="ViewRadio" TargetType="RadioButton">
+            <Setter Property="Foreground"       Value="#90A4AE"/>
+            <Setter Property="FontSize"         Value="12"/>
+            <Setter Property="Margin"           Value="0,2,0,2"/>
+            <Setter Property="Cursor"           Value="Hand"/>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="Foreground" Value="#4FC3F7"/>
+                    <Setter Property="FontWeight" Value="SemiBold"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Big action button -->
+        <Style x:Key="ActionBtn" TargetType="Button">
+            <Setter Property="Background"    Value="#4FC3F7"/>
+            <Setter Property="Foreground"    Value="#0D0D1A"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding"       Value="0,10"/>
+            <Setter Property="FontSize"      Value="13"/>
+            <Setter Property="FontWeight"    Value="Bold"/>
+            <Setter Property="Cursor"        Value="Hand"/>
+            <Setter Property="Margin"        Value="0,0,0,6"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="5" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#81D4FA"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="#0277BD"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Secondary button -->
+        <Style x:Key="SecondBtn" TargetType="Button" BasedOn="{StaticResource ActionBtn}">
+            <Setter Property="Background" Value="#263238"/>
+            <Setter Property="Foreground" Value="#90A4AE"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#37474F"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="10">
+
+            <!-- ── Logo / Header ── -->
+            <Border Background="#0D47A1" CornerRadius="6" Padding="10,8" Margin="0,0,0,10">
+                <StackPanel>
+                    <TextBlock Text="⬛ SteelCAD Plugin"
+                               FontSize="15" FontWeight="Bold"
+                               Foreground="#E3F2FD"/>
+                    <TextBlock x:Name="DbStatusText"
+                               Text="Loading database..."
+                               FontSize="10" Foreground="#90CAF9"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ── Selected Section ── -->
+            <Border Style="{StaticResource GroupBorder}">
+                <StackPanel>
+                    <TextBlock Text="CURRENT SECTION" Style="{StaticResource SectionLabel}"
+                               FontWeight="Bold" Foreground="#4FC3F7"/>
+
+                    <TextBlock x:Name="SectionNameText" Text="—"
+                               Style="{StaticResource ValueText}" FontSize="14"
+                               Foreground="#4FC3F7" Margin="0,0,0,6"/>
+
+                    <!-- Thông số tiết diện -->
+                    <Grid Margin="0,2,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <StackPanel Grid.Row="0" Grid.Column="0" Margin="0,0,4,4">
+                            <TextBlock Text="d (depth)" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValD" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="0" Grid.Column="1" Margin="4,0,0,4">
+                            <TextBlock Text="bf (flange)" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValBf" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="0,0,4,4">
+                            <TextBlock Text="tw (web)" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValTw" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="4,0,0,4">
+                            <TextBlock Text="tf (flange t.)" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValTf" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="0" Margin="0,0,4,0">
+                            <TextBlock Text="Weight" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValW" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="2" Grid.Column="1" Margin="4,0,0,0">
+                            <TextBlock Text="Area" Style="{StaticResource SectionLabel}"/>
+                            <TextBlock x:Name="ValA" Text="—" Style="{StaticResource ValueText}" FontSize="12"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Button Style="{StaticResource SecondBtn}"
+                            Content="🔍 Browse Sections..."
+                            Margin="0,8,0,0"
+                            Click="BrowseSections_Click"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ── View Type ── -->
+            <Border Style="{StaticResource GroupBorder}">
+                <StackPanel>
+                    <TextBlock Text="VIEW TYPE" Style="{StaticResource SectionLabel}"
+                               FontWeight="Bold" Foreground="#4FC3F7"/>
+                    <RadioButton x:Name="RadioPlan"
+                                 Content="📐 Plan View  (nhìn từ trên — Type 1)"
+                                 Style="{StaticResource ViewRadio}"
+                                 IsChecked="True"
+                                 Checked="ViewType_Checked"/>
+                    <RadioButton x:Name="RadioElev"
+                                 Content="📏 Elevation View  (mặt đứng — Type 2)"
+                                 Style="{StaticResource ViewRadio}"
+                                 Checked="ViewType_Checked"/>
+                    <RadioButton x:Name="RadioSect"
+                                 Content="✂ Section View  (cắt ngang — Type 3)"
+                                 Style="{StaticResource ViewRadio}"
+                                 Checked="ViewType_Checked"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ── Place commands ── -->
+            <Border Style="{StaticResource GroupBorder}">
+                <StackPanel>
+                    <TextBlock Text="PLACE ELEMENT" Style="{StaticResource SectionLabel}"
+                               FontWeight="Bold" Foreground="#4FC3F7"/>
+                    <Button Style="{StaticResource ActionBtn}"
+                            Content="⊕  STEELBEAM — Place Beam"
+                            Click="PlaceBeam_Click"/>
+                    <Button Style="{StaticResource SecondBtn}"
+                            Content="✎  STEELEDIT — Edit Selected"
+                            Click="EditBeam_Click"/>
+                    <Button Style="{StaticResource SecondBtn}"
+                            Content="↔  STEELVIEW — Switch View Type"
+                            Click="SwitchView_Click"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ── Settings ── -->
+            <Border Style="{StaticResource GroupBorder}">
+                <StackPanel>
+                    <TextBlock Text="SETTINGS" Style="{StaticResource SectionLabel}"
+                               FontWeight="Bold" Foreground="#4FC3F7"/>
+                    <TextBlock Text="mm per drawing unit:" Style="{StaticResource SectionLabel}"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="MmPerUnitBox" Grid.Column="0"
+                                 Text="1" Background="#0F3460"
+                                 Foreground="White" BorderBrush="#4FC3F7"
+                                 Padding="6,4" FontSize="12"/>
+                        <TextBlock Grid.Column="1" Text=" mm/unit"
+                                   VerticalAlignment="Center"
+                                   Foreground="#78909C" FontSize="11" Margin="4,0,0,0"/>
+                    </Grid>
+                    <TextBlock Text="(1 = mm drawing, 10 = cm, 1000 = m, 100 = 1:100 scale)"
+                               Foreground="#546E7A" FontSize="9" Margin="0,4,0,0"
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
